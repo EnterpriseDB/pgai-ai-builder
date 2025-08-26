@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.9, <4"
 resolution-markers = [
     "python_full_version >= '3.13'",
@@ -3596,19 +3596,33 @@ wheels = [
 
 [[package]]
 name = "pinecone"
-version = "6.0.1"
+version = "7.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
+    { name = "pinecone-plugin-assistant" },
     { name = "pinecone-plugin-interface" },
     { name = "python-dateutil" },
     { name = "typing-extensions" },
     { name = "urllib3", version = "1.26.20", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
     { name = "urllib3", version = "2.3.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3d/aa/acbfc236698c2b11d53711a86a35f533423b3553e0859255cdd2ced3c6c3/pinecone-6.0.1.tar.gz", hash = "sha256:2fbca13153d32d1a012a12eb10472bd5dbb645be8e441381ad88349d8b2198bb", size = 174677, upload-time = "2025-02-10T14:57:22.839Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fa/38/12731d4af470851b4963eba616605868a8599ef4df51c7b6c928e5f3166d/pinecone-7.3.0.tar.gz", hash = "sha256:307edc155621d487c20dc71b76c3ad5d6f799569ba42064190d03917954f9a7b", size = 235256, upload-time = "2025-06-27T20:03:51.498Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/95/df/c65cd8c825953561e7fe70addd0b41e20560abda8f54ab429384cf94f7a1/pinecone-6.0.1-py3-none-any.whl", hash = "sha256:9088c6fc85bc1d70b259b108c59df2b3687a82da491123be8f3c7dfef051ada8", size = 421359, upload-time = "2025-02-10T14:57:20.912Z" },
+    { url = "https://files.pythonhosted.org/packages/b7/a6/c5d54a5fb1de3983a8739c1a1660e7a7074db2cbadfa875b823fcf29b629/pinecone-7.3.0-py3-none-any.whl", hash = "sha256:315b8fef20320bef723ecbb695dec0aafa75d8434d86e01e5a0e85933e1009a8", size = 587563, upload-time = "2025-06-27T20:03:50.249Z" },
+]
+
+[[package]]
+name = "pinecone-plugin-assistant"
+version = "1.7.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fa/8c/2db25e4d88ec31cc096b71473938e9269459eb567b50ea49dbea9a88f3ab/pinecone_plugin_assistant-1.7.0.tar.gz", hash = "sha256:e26e3ba10a8b71c3da0d777cff407668022e82963c4913d0ffeb6c552721e482", size = 145608, upload-time = "2025-06-11T09:06:39.067Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/91/29/9aab5e3e22086da8ba40fa9cd34bfefffd9cdf3f43f237fd7c9969568f20/pinecone_plugin_assistant-1.7.0-py3-none-any.whl", hash = "sha256:864cb8e7930588e6c2da97c6d44f0240969195f43fa303c5db76cbc12bf903a5", size = 239972, upload-time = "2025-06-11T09:06:37.284Z" },
 ]
 
 [[package]]
